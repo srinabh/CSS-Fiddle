@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+body{
+  padding: 10px;
+}
+h1
+{
+  text-align: center;
+ font-family: 'Meddon', cursive;
+ border-bottom: 3px solid black;
+ padding-bottom: 30px;
+ margin: 0;
+}
+h3{
+  padding: 15px;
+  text-align: center;
+}
+.image-fit{
+  width: 100%;
+}
+.container-first-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 3px solid black;
+}
+.container-first-line div{
+  border: 1px grey solid;
+}
+.container-second-line{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 3px solid black;
+}
+
+.container-second-line-ONE{
+  border: 1px grey solid;
+}
+/*
+Box 1,2 and 3 belong to .contailer-f  irst-line
+*/
+.box-1{
+  flex-basis: 25%;
+  padding: 5px;
+}
+.box-2{
+  flex-basis: 50%;
+  padding: 5px;
+}
+.box-3{
+  flex-basis: 25%;
+  padding: 5px;
+}
+/*
+Box 4 and 5 belong to .contailer-second-line
+*/
+.box-4{
+  flex-basis: 25%;
+  padding: 5px;
+  border: 1px grey solid;
+}
+.box-5{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-basis: 75%;
+  margin: 0px;
+  padding: 0px;
+}
+/*
+Nested flex inside box 5 begins here
+*/
+.inside-col{
+  font-size: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  color: grey;
+
+}
+.inside-col:hover{
+  text-decoration: underline;
+  color: black;
+}
+.box-5-1{
+  flex:1;
+  background-color: #ffeaa7;
+}
+.box-5-2{
+  flex:1;
+  background-color: #81ecec;
+}
+.box-5-3{
+  flex:1;
+  background-color: #55efc4;
+}
+.box-5-4{
+  flex:1;
+  background-color: #74b9ff;
+}
+.box-5-5{
+  flex:1;
+  background-color: #a29bfe;
+}
